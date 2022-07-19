@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Questrial&display=swap");
+
+$primaryFont: "Questrial", sans-serif;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

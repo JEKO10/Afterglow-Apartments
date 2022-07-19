@@ -1,3 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Questrial&display=swap");
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+  width: 1170px;
+  margin: 0 auto;
+  font-family: "Questrial", sans-serif;
+}
+nav > a:first-of-type {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 0 20px;
+}
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+nav ul a.active, nav ul a:hover {
+  opacity: 1;
+}
+nav > a:last-of-type {
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+  text-decoration: none;
+  background: rgba(0, 113, 194, 0.5);
+  padding: 10px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+nav > a:last-of-type:hover {
+  background: #0071c2;
+}
+
+.underline {
+  width: 100vw;
+  height: 1.5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
