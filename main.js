@@ -20,3 +20,18 @@ $.ajax({
       });
   },
 });
+
+$(window).on("load", function () {
+  $(".imgContainer img").on("click", function () {
+    $(".fullImg").css("display", "block");
+    $(document.body).css("overflow", "hidden");
+
+    $(".fullImg img").attr("src", this.src);
+  });
+});
+
+$(".fullImg h1").on("click", function () {
+  $(document.body).css("overflow", "auto");
+  $(document.body).css("overflow-x", "hidden");
+  $(".fullImg").css("display", "none");
+});

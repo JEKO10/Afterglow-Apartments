@@ -152,7 +152,7 @@ nav > a:last-of-type:hover {
 
 .imgContainer {
   max-width: 90vw;
-  margin: -4rem auto 0;
+  margin: -4rem auto 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
   grid-auto-rows: 300px;
@@ -172,7 +172,7 @@ nav > a:last-of-type:hover {
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
-.imgContainer img:hover:not(#indexImg) {
+.imgContainer img:hover:not(#indexImg, #fullImg) {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   cursor: pointer;
@@ -216,15 +216,29 @@ nav > a:last-of-type:hover {
 }
 .imgContainer .fullImg {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 97.1%;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
+  text-align: center;
+}
+.imgContainer .fullImg img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.imgContainer .fullImg h1 {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 * {
