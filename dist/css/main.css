@@ -137,9 +137,11 @@ nav > a:last-of-type:hover {
 }
 .hero a {
   background: rgba(46, 161, 177, 0.8);
+  color: #fff;
   padding: 15px 50px;
   font-size: 1.5rem;
   text-transform: uppercase;
+  text-decoration: none;
   margin-top: 3rem;
   border-radius: 5px;
   -webkit-transition: all 500ms ease;
@@ -241,11 +243,50 @@ nav > a:last-of-type:hover {
   cursor: pointer;
 }
 
+#map {
+  font-family: "Questrial", sans-serif;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+#map h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#map > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#map > div h2 {
+  font-size: 3rem;
+  margin-top: 2.5rem;
+}
+#map > div iframe {
+  margin: 2rem 0;
+  width: 100%;
+  height: 750px;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
