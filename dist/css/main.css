@@ -278,6 +278,29 @@ nav > a:last-of-type:hover {
   height: 750px;
 }
 
+@media (max-width: 1200px) {
+  nav {
+    max-width: 92vw;
+    padding: 30px 0;
+  }
+  nav ul li {
+    font-size: 1.05rem;
+  }
+  .hero h1 {
+    padding: 0 30px;
+    font-size: 4rem;
+  }
+  .imgContainer {
+    max-width: 95vw;
+    margin: -3rem auto 3rem;
+  }
+  .imgContainer .fullImg {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .imgContainer .fullImg h1 {
+    right: 1rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
