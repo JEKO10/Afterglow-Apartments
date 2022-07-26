@@ -278,6 +278,36 @@ nav > a:last-of-type:hover {
   height: 750px;
 }
 
+footer {
+  padding: 40px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Questrial", sans-serif;
+}
+footer > a {
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background: rgba(0, 113, 194, 0.5);
+  padding: 10px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+footer > a:hover {
+  background: #0071c2;
+}
+
 @media (max-width: 1200px) {
   nav {
     max-width: 92vw;
