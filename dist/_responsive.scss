@@ -52,11 +52,31 @@
 }
 
 @include mediaMedium {
-  .hero h3 {
-    display: block;
+  .hero {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h3 {
+      display: block;
+    }
   }
 
   .imgContainer {
     grid-auto-rows: 400px;
+  }
+
+  #map > div iframe {
+    height: 90vh;
+  }
+
+  footer {
+    padding: 40px 20px;
+
+    a {
+      font-size: 1rem;
+
+      padding: 10px;
+    }
   }
 }
