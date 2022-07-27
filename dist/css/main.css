@@ -124,6 +124,7 @@ nav > a:last-of-type:hover {
   min-height: 70vh;
   font-family: "Questrial", sans-serif;
   color: #fff;
+  text-align: center;
 }
 .hero h1 {
   font-size: 5rem;
@@ -150,6 +151,12 @@ nav > a:last-of-type:hover {
 }
 .hero a:hover {
   background: #2ea1b1;
+}
+.hero h3 {
+  display: none;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  padding: 0 30px;
 }
 
 .imgContainer {
@@ -290,6 +297,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Questrial", sans-serif;
+  background-color: #2ea1b1;
+  margin-top: 5rem;
 }
 footer > a {
   color: #fff;
@@ -329,6 +338,31 @@ footer > a:hover {
   }
   .imgContainer .fullImg h1 {
     right: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav > a:first-of-type {
+    font-size: 1.3rem;
+  }
+  nav ul li {
+    font-size: 1rem;
+  }
+  nav > a:last-of-type {
+    padding: 10px 10px;
+  }
+  #map {
+    max-width: 95vw;
+  }
+  footer {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero h3 {
+    display: block;
+  }
+  .imgContainer {
+    grid-auto-rows: 400px;
   }
 }
 * {

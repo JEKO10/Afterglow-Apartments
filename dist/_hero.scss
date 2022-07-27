@@ -4,6 +4,7 @@
   min-height: 70vh;
   font-family: $primaryFont;
   color: #fff;
+  text-align: center;
 
   h1 {
     font-size: 5rem;
@@ -32,5 +33,12 @@
     &:hover {
       background: rgba($color: #2ea1b1, $alpha: 1);
     }
+  }
+
+  h3 {
+    display: none;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    padding: 0 30px;
   }
 }
