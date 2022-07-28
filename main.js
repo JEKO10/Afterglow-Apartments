@@ -35,3 +35,9 @@ $(".fullImg h1").on("click", function () {
   $(document.body).css("overflow-x", "hidden");
   $(".fullImg").css("display", "none");
 });
+
+$(".menuBtn").on("click", () => {
+  $(".menuBurger").toggleClass("open");
+
+  $("nav ul, nav #book").toggleClass("hide");
+});
