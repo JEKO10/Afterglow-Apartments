@@ -18,10 +18,16 @@ header {
   0% {
     background-image: url(../../images/1banner.jpg);
   }
+  32% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
   33% {
     background-image: url(../../images/1left.jpg);
   }
   67% {
     background-image: url(../../images/1right.jpg);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 1);
   }
 }

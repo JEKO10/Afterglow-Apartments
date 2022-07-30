@@ -1,3 +1,5 @@
+AOS.init();
+
 var folder = "images/";
 
 $.ajax({
@@ -8,11 +10,10 @@ $.ajax({
       .attr("href", function (i, val) {
         if (val.match(/\.(jpe?g|png|gif)$/)) {
           $(".imgContainer").append(
-            "<div>" +
+            "<div data-aos='zoom-in' data-aos-once='true'>" +
               "<img src='" +
               val +
               "' loading='lazy' decoding='async' alt='IMG'" +
-              `id=${i}` +
               " />" +
               "</div>"
           );
@@ -38,6 +39,12 @@ $(".fullImg h1").on("click", function () {
 
 $(".menuBtn").on("click", () => {
   $(".menuBurger").toggleClass("open");
+
+  if ($(".menuBurger").hasClass("open")) {
+    $(document.body).css("position", "fixed");
+  } else {
+    $(document.body).css("position", "static");
+  }
 
   $("nav ul, nav #book").toggleClass("hide");
 });

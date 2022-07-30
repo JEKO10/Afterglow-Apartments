@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./dist/css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Afterglow Apartmani</title>
   </head>
   <body>
@@ -38,15 +40,55 @@
       </div>
     </header>
     <section class="imgContainer">
-      <img src="./images/1banner.jpg" id="indexImg" alt="IMG" />
-      <img src="./images/balkon.jpg" id="indexImg" alt="IMG" />
-      <img src="./images/view.jpg" id="indexImg" alt="IMG" />
-      <img src="./images/twoBeds.jpg" id="indexImg" alt="IMG" />
-      <img src="./images/wine.jpg" id="indexImg" alt="IMG" />
-      <img src="./images/chair.jpg" id="indexImg" alt="IMG" />
-      <img src="./images/bedsWc.jpg" id="indexImg" alt="IMG" />
-      <img src="./images/all.jpg" id="indexImg" alt="IMG" />
-      <div class="moreImg">
+      <img
+        src="./images/1banner.jpg"
+        id="indexImg"
+        alt="IMG"
+        data-aos="fade-down"
+        data-aos-duration="500"
+      />
+      <img
+        src="./images/balkon.jpg"
+        id="indexImg"
+        alt="IMG"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      />
+      <img
+        src="./images/view.jpg"
+        id="indexImg"
+        alt="IMG"
+        data-aos="fade-down"
+        data-aos-duration="1100"
+      />
+      <img
+        src="./images/twoBeds.jpg"
+        id="indexImg"
+        alt="IMG"
+        data-aos="zoom-in"
+      />
+      <img src="./images/wine.jpg" id="indexImg" alt="IMG" data-aos="zoom-in" />
+      <img
+        src="./images/chair.jpg"
+        id="indexImg"
+        alt="IMG"
+        data-aos="zoom-in"
+      />
+      <img
+        src="./images/bedsWc.jpg"
+        id="indexImg"
+        alt="IMG"
+        data-aos="fade-up"
+        data-aos-duration="500"
+      />
+      <img
+        src="./images/all.jpg"
+        id="indexImg"
+        alt="IMG"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      />
+      <div class="moreImg" data-aos="fade-up" data-aos-duration="1100">
         <img src="./images/wc.jpg" alt="IMG" />
         <a href="./apartments.html">
           <p>+ 45 Fotografija</p>
@@ -86,8 +128,9 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <h2 id="beach">Od smještaja do plaže</h2>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7769.210361996064!2d19.03704050927631!3d42.147298451949645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d42.153590699999995!2d19.0329497!4m5!1s0x134e7738b1538bc7%3A0x23860433f252f5b9!2sAfterglow%20Apartments%2C%202%20Kosovska%2C%20Sutomore%2085355%2C%20Montenegro!3m2!1d42.142761199999995!2d19.043211799999998!5e1!3m2!1sen!2s!4v1658590814480!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3331.439057700786!2d19.04500552785218!3d42.14088422314432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d42.1381398!2d19.0495677!4m5!1s0x134e7738b1538bc7%3A0x23860433f252f5b9!2sAfterglow%20Apartments%2C%202%20Kosovska%2C%20Sutomore%2085355%2C%20Montenegro!3m2!1d42.142761199999995!2d19.043211799999998!5e1!3m2!1sen!2s!4v1659195027807!5m2!1sen!2s"
           width="600"
           height="450"
           style="border: 0"
@@ -107,15 +150,22 @@
     </footer>
   </body>
   <script>
+    AOS.init();
+
     $(".menuBtn").on("click", () => {
       $(".menuBurger").toggleClass("open");
+
+      if ($(".menuBurger").hasClass("open")) {
+        $(document.body).css("position", "fixed");
+      } else {
+        $(document.body).css("position", "static");
+      }
 
       $("nav ul, nav #book").toggleClass("hide");
     });
 
     $("#direction").on("click", () => {
       $(".menuBurger").toggleClass("open");
-
       $("nav ul, nav #book").addClass("hide");
     });
   </script>
