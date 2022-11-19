@@ -12,18 +12,18 @@
 
 ## Project task
 
-This site is for a local apartment renting business. They wanted to present their apartments with images and Google map. Design is mostly client's idea.
+This site is for a local apartment renting business. They wanted to present their apartments with images and Google Maps. Design is mostly the client's idea.
 
 ## Project overview
 
-Presentation of thier business through images and Google map. I used Google maps to show how accessible they are, and how close they are to the sea. Again, design is mostly client's idea. Website is fully responsive.
+Presentation of their business through images and Google Maps. I used Google maps to show how accessible they are, and how close they are to the sea. Again, design is mostly the client's idea. The website is fully responsive.
 
 ## Built with
 
 - HTML
 - Sass
 - Javascript
-- Google map
+- Google Maps
 - Netlify
 
 ## Live preview
